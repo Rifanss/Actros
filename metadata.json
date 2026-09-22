@@ -1,0 +1,11 @@
+{
+  "name": "Remix Remix Remix Remix Remix Remix Remix Remix Remix Remix Remix Remix Remix Remix Remix Remix نقليات لتوريد المياة",
+  "description": "تطبيق ويب متكامل لإدارة نشاط نقليات لتوريد المياة، كرت التوريد، سجل العملاء، الحسابات والفواتير، المدفوعات، التشغيل والمصروفات، وأرصدة الشاحنات.",
+  "requestFramePermissions": [
+    "geolocation",
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

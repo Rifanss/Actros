@@ -1,0 +1,365 @@
+@import "tailwindcss";
+
+/* Native Mobile App Experience & Viewport Stabilization */
+html {
+  touch-action: pan-y manipulation;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  overscroll-behavior-x: none;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  overflow-anchor: none !important;
+  scroll-behavior: auto !important;
+}
+
+body {
+  touch-action: pan-y manipulation;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  overscroll-behavior-x: none;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  min-height: 100%;
+  -webkit-overflow-scrolling: touch;
+  -webkit-touch-callout: none;
+  overflow-anchor: none !important;
+  scroll-behavior: auto !important;
+}
+
+#root {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  min-height: 100%;
+  overflow-anchor: none !important;
+}
+
+/* Prevent double-tap zoom while allowing silky smooth vertical touch drag & scrolling */
+button,
+a,
+input,
+select,
+textarea,
+label {
+  touch-action: pan-y manipulation;
+}
+
+/* Ensure inputs remain easily selectable and interactive without triggering zoom */
+input,
+textarea,
+select {
+  -webkit-user-select: text;
+  user-select: text;
+}
+
+/* =========================================================================
+   PREVENT MOBILE VIEWPORT ZOOM ON FORM INPUT FOCUS (iOS Safari & Chrome)
+   Mobile Safari automatically zooms into the screen if input font-size < 16px.
+   Enforcing 16px font-size on mobile viewports (<768px) completely eliminates
+   unwanted viewport enlargement and screen zoom while typing.
+   ========================================================================= */
+@media screen and (max-width: 768px) {
+  input,
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+}
+
+/* =========================================================================
+   OPERATIONS & SUPPLIES MANAGEMENT MICRO-UI DESIGN SYSTEM
+   Applied EXCLUSIVELY to Operations & Supplies Management (.operations-scope)
+   =========================================================================
+   - Section Titles / Modal Headers: 10.5px–11px (font-extrabold font-Tajawal)
+   - Field Labels: 8.5px (font-semibold)
+   - Field Values / Inputs / Selects: 10px (h-7 / 28px)
+   - Cards / Metric Blocks: min-h-[40px], p-1 to p-2, rounded-lg
+   - Buttons: 8.5px–10px, h-7 (28px)
+   - Date Inputs: 17px–24px, 8px–9.5px
+   ========================================================================= */
+
+/* Operations & Supplies Typography Scale Rules (Scoped strictly to .operations-scope) */
+.operations-scope h1,
+.operations-scope .page-title {
+  font-size: 12px;
+  line-height: 1.3;
+  font-weight: 800;
+  font-family: 'Tajawal', sans-serif;
+}
+
+.operations-scope h2,
+.operations-scope .section-title {
+  font-size: 11px;
+  line-height: 1.3;
+  font-weight: 800;
+  font-family: 'Tajawal', sans-serif;
+}
+
+.operations-scope h3,
+.operations-scope .card-title {
+  font-size: 10.5px;
+  line-height: 1.3;
+  font-weight: 700;
+  font-family: 'Tajawal', sans-serif;
+}
+
+.operations-scope p,
+.operations-scope .body-text {
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.operations-scope label,
+.operations-scope .field-label {
+  font-size: 8.5px;
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+.operations-scope .secondary-text,
+.operations-scope .date-text,
+.operations-scope .desc-text {
+  font-size: 8.5px;
+  line-height: 1.3;
+}
+
+/* Mobile Input Handling - Preserving Micro-UI scale */
+@media (max-width: 768px) {
+  /* Retain smooth touch behavior without forcing enlarged fonts */
+  input, select, textarea {
+    touch-action: manipulation;
+  }
+}
+
+/* Summary Section Compact Date Input */
+.summary-date-input,
+input.summary-date-input {
+  font-size: 8px !important;
+  line-height: 1 !important;
+  height: 17px !important;
+  min-height: 17px !important;
+  max-height: 17px !important;
+  padding: 0px 2px !important;
+  border-radius: 4px !important;
+  -webkit-text-size-adjust: 100%;
+}
+
+.summary-date-input::-webkit-date-and-time-value {
+  font-size: 8px !important;
+  line-height: 17px !important;
+  min-height: 17px !important;
+  text-align: center;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.summary-date-input::-webkit-datetime-edit,
+.summary-date-input::-webkit-datetime-edit-fields-wrapper,
+.summary-date-input::-webkit-datetime-edit-text,
+.summary-date-input::-webkit-datetime-edit-month-field,
+.summary-date-input::-webkit-datetime-edit-day-field,
+.summary-date-input::-webkit-datetime-edit-year-field {
+  font-size: 8px !important;
+  line-height: 1 !important;
+  padding: 0 !important;
+}
+
+.summary-date-input::-webkit-calendar-picker-indicator {
+  width: 10px !important;
+  height: 10px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  cursor: pointer;
+}
+
+/* Customer Profile Header Name */
+.customer-header-name {
+  font-size: 10.5px !important;
+  line-height: 1.25 !important;
+  font-weight: 700 !important;
+}
+
+/* Site-wide Global Ultra-Compact Filters & Selectors (-50% Size) */
+.site-filter-select,
+select.site-filter-select {
+  height: 24px !important;
+  min-height: 24px !important;
+  max-height: 24px !important;
+  font-size: 9.5px !important;
+  line-height: 1.15 !important;
+  padding-top: 1px !important;
+  padding-bottom: 1px !important;
+  padding-right: 14px !important;
+  padding-left: 4px !important;
+  border-radius: 6px !important;
+  box-sizing: border-box !important;
+  background-color: #f8fafc !important;
+  color: #1e293b !important;
+}
+
+select.site-filter-select option {
+  font-size: 11px !important;
+  min-height: 22px !important;
+  padding: 3px 6px !important;
+}
+
+.site-filter-input,
+input.site-filter-input {
+  height: 24px !important;
+  min-height: 24px !important;
+  max-height: 24px !important;
+  font-size: 10px !important;
+  line-height: 1.15 !important;
+  padding-top: 1px !important;
+  padding-bottom: 1px !important;
+  border-radius: 6px !important;
+  box-sizing: border-box !important;
+}
+
+@media (max-width: 768px) {
+  /* On mobile focus, elevate font size to 16px during typing to eliminate iOS zoom, while keeping height 24px */
+  .site-filter-input:focus,
+  input.site-filter-input:focus {
+    font-size: 16px !important;
+  }
+}
+
+.site-filter-btn,
+button.site-filter-btn {
+  height: 24px !important;
+  min-height: 24px !important;
+  max-height: 24px !important;
+  font-size: 9.5px !important;
+  line-height: 1.15 !important;
+  padding: 1px 6px !important;
+  border-radius: 6px !important;
+  box-sizing: border-box !important;
+}
+
+.site-filter-chip {
+  height: 22px !important;
+  min-height: 22px !important;
+  max-height: 22px !important;
+  font-size: 9px !important;
+  line-height: 1.15 !important;
+  padding: 1px 6px !important;
+  border-radius: 6px !important;
+  box-sizing: border-box !important;
+}
+
+/* Supply Card Compact Form Controls & Text */
+.supply-card-field,
+input.supply-card-field,
+select.supply-card-field {
+  height: 28px !important;
+  min-height: 28px !important;
+  max-height: 28px !important;
+  font-size: 11px !important;
+  line-height: 1.2 !important;
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+  padding-right: 6px !important;
+  padding-left: 6px !important;
+  border-radius: 6px !important;
+  box-sizing: border-box !important;
+}
+
+@media (min-width: 769px) {
+  .supply-card-field,
+  input.supply-card-field,
+  select.supply-card-field {
+    font-size: 11.5px !important;
+    min-height: 28px !important;
+    height: 28px !important;
+    max-height: 28px !important;
+  }
+}
+
+select.supply-card-field option {
+  font-size: 11.5px !important;
+  line-height: 1.25 !important;
+  padding: 3px 6px !important;
+  min-height: 22px !important;
+  background-color: #ffffff;
+  color: #1e293b;
+}
+
+/* Operations & Supplies Compact Form Controls (Matching Customer Profile h-7 / 28px and text-[10px]) */
+.operations-scope input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="button"]):not([type="submit"]):not([type="reset"]):not([type="color"]):not([type="file"]):not(.summary-date-input),
+.operations-scope select {
+  font-size: 10px;
+  line-height: 1.25;
+  min-height: 28px;
+  height: 28px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 6px;
+  padding-left: 6px;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+/* Operations Scope Dropdown Menu Options */
+.operations-scope select option {
+  font-size: 10.5px;
+  line-height: 1.3;
+  padding: 3px 6px;
+  background-color: #ffffff;
+  color: #1e293b;
+}
+
+.operations-scope textarea {
+  font-size: 10px;
+  line-height: 1.4;
+  padding: 4px 6px;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+
+/* Operations Scope Input Placeholders */
+.operations-scope input::placeholder,
+.operations-scope textarea::placeholder,
+.operations-scope select::placeholder {
+  font-size: 9.5px;
+  color: #94a3b8;
+  opacity: 1;
+  font-weight: 400;
+}
+
+/* =========================================================================
+   A4 STANDARD DOCUMENT PRINTING & HI-DPI PREVIEW RULES
+   ========================================================================= */
+@page {
+  size: A4 portrait;
+  margin: 10mm 10mm 12mm 10mm;
+}
+
+@media print {
+  html, body, #root {
+    background: #ffffff !important;
+    color: #0f172a !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Force clean page breaks between multiple A4 sheets */
+  .a4-page-sheet,
+  [data-a4-sheet="true"] {
+    page-break-after: always !important;
+    break-after: page !important;
+    box-shadow: none !important;
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    min-height: 0 !important;
+  }
+}
+

@@ -1,0 +1,69 @@
+<svg viewBox="0 0 480 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g fill="#042b57">
+    <!-- Arabic Calligraphy "نبع" -->
+    <rect x="410" y="76" width="22" height="22" transform="rotate(45 410 76)" fill="#042b57" />
+    <path d="M438 88C430 115 415 142 396 162C382 176 366 186 348 190C344 182 342 172 342 162C365 158 385 145 401 127C414 112 423 93 427 72L438 88Z" fill="#042b57" />
+    <path d="M362 135C352 110 328 92 300 92C265 92 238 120 238 155C238 185 258 210 286 217C268 228 244 235 218 238C222 245 228 251 235 256C275 251 310 238 335 220C350 209 362 195 370 180C392 188 416 186 438 174C456 164 466 148 468 128C448 144 425 152 400 152C385 152 372 146 362 135ZM300 112C318 112 334 125 338 144C326 156 310 164 292 164C276 164 262 153 260 137C262 123 280 112 300 112Z" fill="#042b57" />
+    <rect x="302" y="235" width="18" height="18" transform="rotate(45 302 235)" fill="#042b57" />
+
+    <!-- Water Droplet & Arch Emblem -->
+    <path d="M100 135C118 78 175 36 242 36C298 36 348 65 374 110C366 112 358 116 352 121C330 85 289 60 242 60C188 60 142 94 124 142L100 135Z" fill="#042b57" />
+    <path d="M252 24C252 24 200 88 200 128C200 160 223 182 252 182C281 182 304 160 304 128C304 88 252 24 252 24Z" fill="#042b57" />
+    <path d="M204 135C216 122 232 142 252 135C272 128 286 142 298 132C296 148 284 172 252 172C222 172 208 148 204 135Z" fill="#ffffff" />
+    <path d="M212 147C224 138 238 152 254 147C270 142 282 153 292 145C286 162 272 174 252 174C232 174 220 162 212 147Z" fill="#042b57" />
+
+    <!-- Mercedes Tanker Truck -->
+    <path d="M32 202L32 122C32 118 35 114 39 113L88 98C93 96 98 99 99 104L105 130L148 136C153 137 156 141 156 146L156 202L32 202Z" fill="#042b57" />
+    <path d="M44 126L85 114C87 113 90 115 90 117L94 142L44 142L44 126Z" fill="#ffffff" />
+    <path d="M102 124L140 130C142 130 144 132 144 135L144 145L102 145L102 124Z" fill="#ffffff" />
+    <rect x="38" y="152" width="58" height="36" rx="4" fill="#ffffff" />
+    <circle cx="67" cy="170" r="11" fill="#042b57" />
+    <circle cx="67" cy="170" r="9" fill="#ffffff" />
+    <path d="M67 162L67 170M67 170L60 175M67 170L74 175" stroke="#042b57" stroke-width="2.5" stroke-linecap="round" />
+    <path d="M26 190L108 190L104 204L30 204Z" fill="#042b57" />
+    <rect x="34" y="193" width="14" height="6" rx="2" fill="#0284c7" />
+    <rect x="88" y="193" width="14" height="6" rx="2" fill="#0284c7" />
+    <circle cx="58" cy="206" r="16" fill="#042b57" />
+    <circle cx="58" cy="206" r="10" fill="#ffffff" />
+    <circle cx="58" cy="206" r="5" fill="#042b57" />
+    <circle cx="132" cy="206" r="14" fill="#042b57" />
+    <circle cx="132" cy="206" r="8" fill="#ffffff" />
+
+    <!-- Tanker Body -->
+    <path d="M152 142C152 125 166 112 184 112L244 112C262 112 276 125 276 142L276 188C276 194 272 198 266 198L158 198C154 198 152 194 152 188L152 142Z" fill="#042b57" />
+    <rect x="175" y="106" width="30" height="6" rx="2" fill="#042b57" />
+    <rect x="225" y="106" width="30" height="6" rx="2" fill="#042b57" />
+    <path d="M154 165C175 145 195 185 225 165C245 152 265 168 274 160L274 178C258 185 240 172 222 180C195 192 175 168 154 185Z" fill="#ffffff" />
+
+    <!-- 3 Tanker Rear Wheels -->
+    <circle cx="188" cy="208" r="14" fill="#042b57" />
+    <circle cx="188" cy="208" r="8" fill="#ffffff" />
+    <circle cx="188" cy="208" r="4" fill="#042b57" />
+    <circle cx="218" cy="208" r="14" fill="#042b57" />
+    <circle cx="218" cy="208" r="8" fill="#ffffff" />
+    <circle cx="218" cy="208" r="4" fill="#042b57" />
+    <circle cx="248" cy="208" r="14" fill="#042b57" />
+    <circle cx="248" cy="208" r="8" fill="#ffffff" />
+    <circle cx="248" cy="208" r="4" fill="#042b57" />
+    <path d="M170 200L266 200L266 195L170 195Z" fill="#042b57" />
+
+    <!-- Ocean Waves -->
+    <path d="M16 238C60 215 130 248 205 228C275 210 345 238 415 220C445 212 470 224 476 226C455 242 410 248 355 246C275 244 210 262 135 258C75 255 35 244 16 238Z" fill="#042b57" />
+    <path d="M32 248C85 232 155 256 228 245C295 235 365 255 435 238C458 232 472 238 474 240C445 256 385 264 325 260C245 256 175 272 105 268C65 266 42 256 32 248Z" fill="#0284c7" fill-opacity="0.35" />
+
+    <!-- NABAA -->
+    <path d="M125 284V258H138L153 277V258H165V284H152L137 265V284H125Z" fill="#042b57" />
+    <path d="M172 284L186 258H199L213 284H200L197 278H187L184 284H172ZM192 267L189 273H195L192 267Z" fill="#042b57" />
+    <path d="M221 284V258H240C246 258 250 260 252 263C254 266 254 269 252 271C255 273 256 277 254 280C252 283 248 284 241 284H221ZM233 264V269H239C241 269 243 268 243 266C243 265 241 264 239 264H233ZM233 273V279H240C242 279 244 278 244 276C244 274 242 273 240 273H233Z" fill="#042b57" />
+    <path d="M262 284L276 258H289L303 284H290L287 278H277L274 284H262ZM282 267L279 273H285L282 267Z" fill="#042b57" />
+    <path d="M311 284L325 258H338L352 284H339L336 278H326L323 284H311ZM331 267L328 273H334L331 267Z" fill="#042b57" />
+
+    <!-- Subtitle: — لتوريد المياة — -->
+    <rect x="42" y="296" width="95" height="3.5" rx="1.5" fill="#042b57" />
+    <rect x="343" y="296" width="95" height="3.5" rx="1.5" fill="#042b57" />
+    <text x="240" y="302" text-anchor="middle" fill="#042b57" font-family="'Cairo', 'Tajawal', sans-serif" font-weight="900" font-size="17">لتوريد المياة</text>
+
+    <!-- Subtitle: DESALINATED WATER SUPPLY -->
+    <text x="240" y="316" text-anchor="middle" fill="#042b57" font-family="sans-serif" font-weight="bold" font-size="9" letter-spacing="0.28em">DESALINATED WATER SUPPLY</text>
+  </g>
+</svg>

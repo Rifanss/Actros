@@ -1,0 +1,271 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" width="100%" height="100%" style="overflow: visible;">
+  <defs>
+    <!-- Cylindrical 3D volume gradient for tank -->
+    <linearGradient id="tankVolumeGrad_non-potable" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="8%" stop-color="#ffffff" />
+      <stop offset="20%" stop-color="#f8f9fa" />
+      <stop offset="65%" stop-color="#ebedf0" />
+      <stop offset="88%" stop-color="#d8dce2" />
+      <stop offset="100%" stop-color="#c2c7cf" />
+    </linearGradient>
+
+    <!-- Cab 3D shading -->
+    <linearGradient id="cabShading_non-potable" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="65%" stop-color="#f8f9fa" />
+      <stop offset="100%" stop-color="#e2e5e9" />
+    </linearGradient>
+
+    <!-- Chassis black metal gradient -->
+    <linearGradient id="chassisBedGrad_non-potable" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#232326" />
+      <stop offset="40%" stop-color="#18181b" />
+      <stop offset="100%" stop-color="#09090b" />
+    </linearGradient>
+
+    <!-- Hose pipe gradient -->
+    <linearGradient id="hoseGrad_non-potable" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3f3f46" />
+      <stop offset="25%" stop-color="#52525b" />
+      <stop offset="60%" stop-color="#27272a" />
+      <stop offset="100%" stop-color="#18181b" />
+    </linearGradient>
+
+    <!-- Wheels tire radial gradient -->
+    <radialGradient id="tireGrad_non-potable" cx="45%" cy="45%" r="55%">
+      <stop offset="65%" stop-color="#1c1c1f" />
+      <stop offset="90%" stop-color="#111113" />
+      <stop offset="100%" stop-color="#050505" />
+    </radialGradient>
+
+    <!-- Wheel rim silver radial gradient -->
+    <radialGradient id="rimSilverGrad_non-potable" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="40%" stop-color="#e4e4e7" />
+      <stop offset="75%" stop-color="#a1a1aa" />
+      <stop offset="100%" stop-color="#52525b" />
+    </radialGradient>
+
+    <!-- Tank clip path matching the rounded cylinder perfectly -->
+    <clipPath id="tankShapeClip_non-potable">
+      <rect x="282" y="58" width="668" height="176" rx="16" ry="16" />
+    </clipPath>
+  </defs>
+
+  <g id="tanker-truck_non-potable">
+    <!-- ================= 1. REAR UNDERRUN BAR & MUDFLAP ================= -->
+    <!-- Rear mudflap behind wheel -->
+    <path d="M 822 280 L 822 368 L 798 368" stroke="#09090b" stroke-width="11" stroke-linecap="round" fill="none" />
+    <!-- Rear diagonal bracket / tow hook bar -->
+    <path d="M 932 285 L 932 335 L 962 355" stroke="#18181b" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+
+    <!-- ================= 2. LOWER CHASSIS & GUARD ================= -->
+    <!-- Main horizontal chassis bed beam -->
+    <rect x="80" y="262" width="880" height="34" rx="4" fill="url(#chassisBedGrad_non-potable)" />
+    <!-- Top edge metallic line on chassis -->
+    <line x1="85" y1="263" x2="955" y2="263" stroke="#3f3f46" stroke-width="1.5" />
+
+    <!-- Area between wheels (x=305 to x=685) -->
+    <!-- Dark background equipment box -->
+    <rect x="308" y="296" width="378" height="62" rx="4" fill="#18181b" />
+    <!-- Spare wheel / fuel tank cylinder behind side guard -->
+    <rect x="316" y="304" width="164" height="46" rx="6" fill="#09090b" />
+    <!-- Battery / toolbox compartment -->
+    <rect x="490" y="302" width="190" height="50" rx="4" fill="#222225" stroke="#141416" stroke-width="2" />
+    <circle cx="498" cy="327" r="3" fill="#71717a" />
+
+    <!-- Protective Side Guard Rail (distinctive white rectangular frame) -->
+    <rect x="314" y="302" width="168" height="50" rx="5" fill="none" stroke="#ffffff" stroke-width="5.5" />
+    <!-- Center white dividing horizontal bar -->
+    <line x1="317" y1="327" x2="479" y2="327" stroke="#ffffff" stroke-width="5.5" stroke-linecap="square" />
+
+    <!-- Small chassis amber reflectors -->
+    <rect x="175" y="274" width="9" height="5" rx="1.5" fill="#f59e0b" />
+    <rect x="255" y="274" width="11" height="6" rx="1.5" fill="#f59e0b" />
+
+    <!-- ================= 3. TANK (WHITE CYLINDRICAL) ================= -->
+    <!-- Brass/Amber vent valve at top rear -->
+    <rect x="932" y="48" width="8" height="12" rx="2" fill="#d97706" />
+    <circle cx="936" cy="47" r="4.5" fill="#b45309" />
+    <circle cx="936" cy="47" r="2.5" fill="#f59e0b" />
+
+    <!-- Main Tank White Cylinder -->
+    <rect x="282" y="58" width="668" height="176" rx="16" ry="16" fill="url(#tankVolumeGrad_non-potable)" />
+    
+    <!-- Highlights along top and seams -->
+    <line x1="296" y1="62" x2="934" y2="62" stroke="rgba(255,255,255,0.9)" stroke-width="2.5" />
+    <!-- Left end cap curve line -->
+    <path d="M 302 58 C 290 58 282 68 282 82 L 282 210 C 282 224 290 234 302 234" fill="none" stroke="rgba(0,0,0,0.08)" stroke-width="2.5" />
+    <!-- Right end cap curve line -->
+    <path d="M 930 58 C 942 58 950 68 950 82 L 950 210 C 950 224 942 234 930 234" fill="none" stroke="rgba(0,0,0,0.08)" stroke-width="2.5" />
+
+    <!-- GRAPHIC INSIDE TANK CLIP -->
+    <g clip-path="url(#tankShapeClip_non-potable)">
+      <!-- 1. The Large Colored Wave Dome on the Right Side -->
+      <!-- Smooth curve rising from bottom (x=600) up to top (x=735) and covering the entire right -->
+      <path d="M 590 234 C 635 175 675 80 735 58 L 960 58 L 960 234 Z" fill="#008323" />
+
+      <!-- 2. Lower White Curved Stripe (cuts through bottom of wave) -->
+      <path d="M 618 238 C 665 178 720 148 960 152 L 960 167 C 715 163 652 195 605 238 Z" fill="#ffffff" />
+
+      <!-- 3. Upper White Curved Stripe (cuts through middle of wave) -->
+      <path d="M 668 238 C 722 150 790 108 960 110 L 960 124 C 782 122 712 165 652 238 Z" fill="#ffffff" />
+    </g>
+
+    <!-- TEXT ON TANK (Arabic + English) -->
+    <g text-anchor="middle">
+      <!-- Arabic Text Line -->
+      <text x="470" y="118" font-family="'Tajawal', 'Cairo', 'Segoe UI', system-ui, sans-serif" font-size="27" font-weight="800" fill="#008323">
+        مياه غير صالحة للشرب
+      </text>
+      <!-- English Text Line -->
+      <text x="470" y="146" font-family="'Roboto', 'Segoe UI', Arial, sans-serif" font-size="17" font-weight="800" letter-spacing="1.6" fill="#008323">
+        NON-POTABLE WATER
+      </text>
+    </g>
+
+    <!-- ================= 4. HORIZONTAL PIPE / HOSE UNDER TANK ================= -->
+    <!-- Black pipe running below the tank -->
+    <rect x="294" y="236" width="644" height="20" rx="10" fill="url(#hoseGrad_non-potable)" />
+    <line x1="300" y1="238" x2="930" y2="238" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
+    <!-- Pipe bracket mounts connecting to tank/chassis -->
+    <rect x="300" y="230" width="12" height="34" rx="2.5" fill="#18181b" />
+    <rect x="435" y="230" width="12" height="34" rx="2.5" fill="#18181b" />
+    <rect x="570" y="230" width="12" height="34" rx="2.5" fill="#18181b" />
+    <rect x="710" y="230" width="12" height="34" rx="2.5" fill="#18181b" />
+    <rect x="880" y="230" width="12" height="34" rx="2.5" fill="#18181b" />
+
+    <!-- ================= 5. WHITE CABOVER CABIN ================= -->
+    <!-- Amber roof clearance light on cab -->
+    <ellipse cx="92" cy="27" rx="5.5" ry="3" fill="#f59e0b" />
+    <rect x="89" y="28" width="6" height="3" fill="#d97706" />
+
+    <!-- Cab Shell Path (white with subtle shadow) -->
+    <path d="
+      M 78 32 
+      L 258 32 
+      C 267 32 273 38 273 47 
+      L 273 262 
+      L 125 262 
+      L 125 292 
+      L 90 292 
+      C 86 292 82 288 82 283 
+      L 58 283 
+      C 56 283 54 281 54 278 
+      L 54 202 
+      C 54 186 60 178 62 168 
+      L 68 47 
+      C 69 37 73 32 78 32 Z" 
+      fill="url(#cabShading_non-potable)" 
+      stroke="#d4d4d8" 
+      stroke-width="1.5" 
+    />
+
+    <!-- Lower Cab Step & Bumper -->
+    <rect x="56" y="236" width="28" height="50" fill="#ffffff" rx="2" />
+    <!-- Step cutout inside bumper -->
+    <rect x="88" y="266" width="32" height="18" rx="3" fill="#27272a" />
+    <!-- Small fog lamp -->
+    <rect x="88" y="256" width="28" height="6" rx="1" fill="#e4e4e7" stroke="#a1a1aa" stroke-width="1" />
+    <!-- Front corner amber turn indicator -->
+    <rect x="58" y="238" width="15" height="20" rx="2" fill="#f59e0b" stroke="#d97706" stroke-width="0.5" />
+
+    <!-- Cab Window (Dark tinted driver window) -->
+    <path d="
+      M 84 82 
+      L 168 82 
+      C 172 82 175 84 175 88 
+      L 175 166 
+      C 175 171 171 175 166 175 
+      L 84 175 
+      C 78 175 74 171 74 166 
+      L 76 92 
+      C 77 86 80 82 84 82 Z" 
+      fill="#18181b" 
+      stroke="#27272a" 
+      stroke-width="2" 
+    />
+    <path d="M 84 86 L 165 86 L 165 169 L 84 169 Z" fill="#27272a" opacity="0.55" />
+
+    <!-- Black Side Mirror mounted on A-pillar -->
+    <rect x="96" y="90" width="12" height="48" rx="4" fill="#09090b" />
+    <path d="M 102 100 L 88 96" stroke="#09090b" stroke-width="3" stroke-linecap="round" />
+    <path d="M 102 128 L 88 132" stroke="#09090b" stroke-width="3" stroke-linecap="round" />
+
+    <!-- Door Panel Gap Lines on Cab -->
+    <path d="M 180 75 L 258 75 C 263 75 266 78 266 83 L 266 244 L 135 244" fill="none" stroke="#cbd5e1" stroke-width="2" />
+    <path d="M 180 75 L 180 244" fill="none" stroke="#cbd5e1" stroke-width="2" />
+    <!-- Recessed Door Handle -->
+    <rect x="228" y="172" width="18" height="10" rx="2.5" fill="#27272a" stroke="#18181b" stroke-width="1" />
+    <!-- Lower side compartment panel line -->
+    <rect x="184" y="196" width="74" height="40" rx="2" fill="none" stroke="#e2e8f0" stroke-width="1.5" />
+
+    <!-- Front Wheel Arch Fender (Black Curved) -->
+    <path d="M 112 262 A 70 70 0 0 1 258 262 Z" fill="#18181b" />
+    
+    <!-- Rear Wheel Arch Fender (Black Curved) -->
+    <path d="M 686 262 A 70 70 0 0 1 832 262 Z" fill="#18181b" />
+
+    <!-- ================= 6. WHEELS (FRONT & REAR) ================= -->
+    <!-- Wheel 1: Front Wheel at (185, 272) -->
+    <g transform="translate(185, 272)">
+      <!-- Outer Rubber Tire -->
+      <circle cx="0" cy="0" r="56" fill="url(#tireGrad_non-potable)" />
+      <circle cx="0" cy="0" r="55" fill="none" stroke="#27272a" stroke-width="2" />
+      <!-- Silver Rim Outer Edge -->
+      <circle cx="0" cy="0" r="37" fill="url(#rimSilverGrad_non-potable)" />
+      <circle cx="0" cy="0" r="36" fill="none" stroke="#52525b" stroke-width="1.5" />
+      <!-- Recessed Ring -->
+      <circle cx="0" cy="0" r="29" fill="#71717a" />
+      <circle cx="0" cy="0" r="25" fill="url(#rimSilverGrad_non-potable)" />
+      <!-- Ring of 10 Silver Lug Nuts -->
+      <g>
+        <circle cx="0" cy="-18" r="2.2" fill="#ffffff" stroke="#3f3f46" stroke-width="0.8" />
+        <circle cx="10.6" cy="-14.6" r="2.2" fill="#ffffff" stroke="#3f3f46" stroke-width="0.8" />
+        <circle cx="17.1" cy="-5.6" r="2.2" fill="#ffffff" stroke="#3f3f46" stroke-width="0.8" />
+        <circle cx="17.1" cy="5.6" r="2.2" fill="#ffffff" stroke="#3f3f46" stroke-width="0.8" />
+        <circle cx="10.6" cy="14.6" r="2.2" fill="#ffffff" stroke="#3f3f46" stroke-width="0.8" />
+        <circle cx="0" cy="18" r="2.2" fill="#ffffff" stroke="#3f3f46" stroke-width="0.8" />
+        <circle cx="-10.6" cy="14.6" r="2.2" fill="#ffffff" stroke="#3f3f46" stroke-width="0.8" />
+        <circle cx="-17.1" cy="5.6" r="2.2" fill="#ffffff" stroke="#3f3f46" stroke-width="0.8" />
+        <circle cx="-17.1" cy="-5.6" r="2.2" fill="#ffffff" stroke="#3f3f46" stroke-width="0.8" />
+        <circle cx="-10.6" cy="-14.6" r="2.2" fill="#ffffff" stroke="#3f3f46" stroke-width="0.8" />
+      </g>
+      <!-- Center Hubcap -->
+      <circle cx="0" cy="0" r="11" fill="#27272a" />
+      <circle cx="0" cy="0" r="7.5" fill="#18181b" />
+      <circle cx="0" cy="0" r="3.8" fill="#a1a1aa" />
+    </g>
+
+    <!-- Wheel 2: Rear Wheel at (759, 272) -->
+    <g transform="translate(759, 272)">
+      <!-- Outer Rubber Tire -->
+      <circle cx="0" cy="0" r="56" fill="url(#tireGrad_non-potable)" />
+      <circle cx="0" cy="0" r="55" fill="none" stroke="#27272a" stroke-width="2" />
+      <!-- Silver Rim Outer Edge -->
+      <circle cx="0" cy="0" r="37" fill="url(#rimSilverGrad_non-potable)" />
+      <circle cx="0" cy="0" r="36" fill="none" stroke="#52525b" stroke-width="1.5" />
+      <!-- Recessed Ring -->
+      <circle cx="0" cy="0" r="29" fill="#71717a" />
+      <circle cx="0" cy="0" r="25" fill="url(#rimSilverGrad_non-potable)" />
+      <!-- Ring of 10 Silver Lug Nuts -->
+      <g>
+        <circle cx="0" cy="-18" r="2.2" fill="#ffffff" stroke="#3f3f46" stroke-width="0.8" />
+        <circle cx="10.6" cy="-14.6" r="2.2" fill="#ffffff" stroke="#3f3f46" stroke-width="0.8" />
+        <circle cx="17.1" cy="-5.6" r="2.2" fill="#ffffff" stroke="#3f3f46" stroke-width="0.8" />
+        <circle cx="17.1" cy="5.6" r="2.2" fill="#ffffff" stroke="#3f3f46" stroke-width="0.8" />
+        <circle cx="10.6" cy="14.6" r="2.2" fill="#ffffff" stroke="#3f3f46" stroke-width="0.8" />
+        <circle cx="0" cy="18" r="2.2" fill="#ffffff" stroke="#3f3f46" stroke-width="0.8" />
+        <circle cx="-10.6" cy="14.6" r="2.2" fill="#ffffff" stroke="#3f3f46" stroke-width="0.8" />
+        <circle cx="-17.1" cy="5.6" r="2.2" fill="#ffffff" stroke="#3f3f46" stroke-width="0.8" />
+        <circle cx="-17.1" cy="-5.6" r="2.2" fill="#ffffff" stroke="#3f3f46" stroke-width="0.8" />
+        <circle cx="-10.6" cy="-14.6" r="2.2" fill="#ffffff" stroke="#3f3f46" stroke-width="0.8" />
+      </g>
+      <!-- Center Hubcap -->
+      <circle cx="0" cy="0" r="11" fill="#27272a" />
+      <circle cx="0" cy="0" r="7.5" fill="#18181b" />
+      <circle cx="0" cy="0" r="3.8" fill="#a1a1aa" />
+    </g>
+  </g>
+</svg>
